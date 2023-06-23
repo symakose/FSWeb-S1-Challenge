@@ -181,9 +181,14 @@ Aşağıdakileri yapmak için profilListesi'ni kullanın:
 🌟 Dönüş ÖRNEĞİ: ["Instagram", "Cristiano Ronaldo", "Kylie"....]
 */
 
-function profilListesi(/*kod*/) {
-  /*kod*/
+function profilListesi(fenomenler) {
+  const yeniDizi = [];
+  for (let i = 0; i < fenomenler.length; i++) {
+    yeniDizi.push(fenomenler[i].profile);
+  }
+  return yeniDizi;
 }
+console.log(profilListesi(fenomenler));
 
 /* Görev 5:
 Aşağıdakileri yapmak için fenomenSil'i kullanın:
