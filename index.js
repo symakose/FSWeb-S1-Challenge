@@ -268,9 +268,15 @@ Aşağıdakileri yapmak için fenomenGonderimSayisi'nı kullanın:
 ÖRNEK: fenomenGonderimSayisi(fenomenler, 'Will Smith') çağrıldığında "136" dönmelidir
 */
 
-function fenomenGonderimSayisi(/*kod*/) {
-  /*kod*/
+function fenomenGonderimSayisi(fenomenler, profile) {
+  for (let i = 0; i < fenomenler.length; i++) {
+    const fenomen = fenomenler[i];
+    if (fenomenler[i].profile === profile) {
+      return " " + fenomen.posts;
+    }
+  }
 }
+console.log(fenomenGonderimSayisi(fenomenler, "Will Smith"));
 
 /* Görev 9:
 Aşağıdakileri yapmak için platformaGoreCokGonderiYapanFenomen'ni kullanın:
