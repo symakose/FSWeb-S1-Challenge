@@ -153,9 +153,22 @@ console.log(fenomenler[0].profile);
 //(2) Dizideki üçüncü fenomenin (2. dizin) takipçi (followers) sayısı
 console.log(fenomenler[2].followers);
 
+
+const data = {
+  "number": 2,
+  "profile": "Justin Biber",
+  "followers": 114165664,
+  "posts": 31371,
+  "platform": "Twitter"
+};
+
+data.profile = "Justin Bieber";
+console.log(data);
+
 /* Görev 2 (otomatik kontrol testi yapılmayacak):
 (işlev yazmanıza gerek yok)
 Fenomenler dizisinde bir yazım hatası var 😱 7. sıradaki fenomen 'Justin Bieber' ın soyismi 'Biber' olarak yanlış yazılmış. Bu sorunu düzeltin ve çalışmanızı kontrol etmek için console.log() yapın.
+(GÖREV 2.NİN CEVABI ÜZERİNDE, BURAYA YAZAMADIM ALAN YEŞİL KALDI HEP, SORUNU ÇÖZEMEDİM)
 
 /*  Görev 3:
 Aşağıdaki işlemleri yapmak için indekseGoreFenomen işlevini kullanın:
@@ -289,7 +302,15 @@ Not: Gönderi sayısı belli olmayan (NA) hesaba katmayın.
 Örnek: platformaGoreCokGonderiYapanFenomen(fenomenler, 'TikTok') çağrıldığında "charli damelio" dönmelidir
 */
 
-function platformaGoreCokGonderiYapanFenomen(/*kod*/) {
+function platformaGoreCokGonderiYapanFenomen(fenomenler, platformAdi) {
+  let fenomeninAdi = null;
+  let enCokGonderiSayisi = 0;
+
+  for (let i =0; i<fenomenler.length; i++) {
+    const fenomen = fenomenler[i];
+    if (fenomen.profile === platformAdi && fenomen.posts> enCokGonderiSayisi)
+  }
+
   /*kod*/
 }
 
