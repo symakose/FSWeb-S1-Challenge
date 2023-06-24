@@ -154,16 +154,9 @@ console.log(fenomenler[0].profile);
 console.log(fenomenler[2].followers);
 
 
-const data = {
-  "number": 2,
-  "profile": "Justin Biber",
-  "followers": 114165664,
-  "posts": 31371,
-  "platform": "Twitter"
-};
+fenomenler[6]["profile"] = "Justin Bieber";
+console.log(fenomenler[6]["profile"]);
 
-data.profile = "Justin Bieber";
-console.log(data);
 
 /* Görev 2 (otomatik kontrol testi yapılmayacak):
 (işlev yazmanıza gerek yok)
